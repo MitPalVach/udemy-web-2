@@ -1,0 +1,103 @@
+//slick-slider
+
+.carousel {
+  padding: 81px 0;
+
+  //&__inner {
+  //  position: relative;
+  //  width: 750px;
+  //  margin: 0 auto;
+  //
+  //  div {
+  //    outline: none;
+  //  }
+  //}
+  //
+  //.slick-prev {
+  //  position: absolute;
+  //  top: 50%;
+  //  transform: translateY(-50%);
+  //  left: -66px;
+  //  background: #FFFFFF;
+  //  border: none;
+  //  outline: none;
+  //}
+  //
+  //.slick-next {
+  //  position: absolute;
+  //  top: 50%;
+  //  transform: translateY(-50%);
+  //  right: -66px;
+  //  background: #FFFFFF;
+  //  border: none;
+  //  outline: none;
+  //}
+}
+
+//tiny-slider
+
+.tns-outer {
+  position: relative;
+  width: 750px;
+  margin: 0 auto;
+
+}
+
+.tns-controls {
+  button:nth-child(1) {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -66px;
+    background: #FFFFFF;
+    border: none;
+    outline: none;
+
+  }
+  button:nth-child(2) {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -66px;
+    background: #FFFFFF;
+    border: none;
+    outline: none;
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
