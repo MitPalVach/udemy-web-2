@@ -34,8 +34,18 @@
       text-decoration: underline;
     }
   }
-}
 
+  &__icon {
+
+    &_heartbeat {
+      animation: heartBeat 1.3s linear infinite;
+
+      &:hover {
+        animation-play-state: paused;
+      }
+    }
+  }
+}
 
 
 

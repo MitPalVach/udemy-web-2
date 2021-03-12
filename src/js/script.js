@@ -1,6 +1,7 @@
+$(document).ready(function () {
+//
 // // ===== slick-slider ============
 //
-$(document).ready(function () {
 //     $('.carousel__inner').slick({
 //         prevArrow: '<button type="button" class="slick-prev"><img src="../icons/left.svg" alt=""></button>',
 //         nextArrow: '<button type="button" class="slick-next"><img src="../icons/right.svg" alt=""></button>',
@@ -103,7 +104,7 @@ $(document).ready(function () {
     validateForms('#consultation-form');
     validateForms('#consultation form');
     validateForms('#order form');
-
+    //
     $('input[name=phone]').mask("+7 (999) 999-99-99");
 
     //  ====== ajax ==============
@@ -125,6 +126,23 @@ $(document).ready(function () {
         return false;
     });
 
+    //  ====== pageup ==============
+
+    $(window).scroll(function () {
+       if ($(this).scrollTop() > 1600) {
+           $('.pageup').fadeIn();
+       } else {
+           $('.pageup').fadeOut();
+       }
+    });
+
+    //  ====== smooth scroll ==============
+
+    $("a[href^='#']").click(function (){
+       let _href = $(this).attr('href');
+       $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+       return false;
+    });
 
 });
 
